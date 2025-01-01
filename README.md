@@ -1,6 +1,6 @@
 # Replika 文档说明
 
-本项目为Orlando Bloom的[粉丝网站](https://junesirius.github.io/Replika)的源代码，由“[六月的天狼星](https://junesirius.github.io)”搭建、设计、排版、维护。
+本项目为[Lumina's Diary](https://junesirius.github.io/Replika)的源代码，由“[六月的天狼星](https://junesirius.github.io)”搭建、设计、排版、维护。
 
 本文档用于解释网站设计相关的各文件，未提及文件多为Jekyll、Bootstrap等的必要配置文件，无需改动。
 
@@ -45,8 +45,8 @@
 
 ### [\_config.yml](https://github.com/junesirius/Replika/blob/master/_config.yml)
 
-- name: The Orlando Bloom Files
-- name_en: Orlando Bloom
+- name: Lumina's Diary
+- name_en: Lumina's Diary
 - url: 主站链接
 - baseurl: 粉丝站根目录
 - paginate: 首页的每页文章数量
@@ -100,7 +100,7 @@
 #### [header.html](https://github.com/junesirius/Replika/tree/master/_includes/header.html)
 
 - 在\<head\>的\<title\>标签下确定各页面标题显示为：“文章标题 | 作者”
-- 在\<head\>的\<link rel="icon"\>标签下设置本站的图标，图标存储位置为[favicon.jpg](https://github.com/junesirius/Replika/blob/master/assets/media/favicon.jpg)
+- 在\<head\>的\<link rel="icon"\>标签下设置本站的图标，图标存储位置为[favicon.jpg](https://github.com/junesirius/Replika/blob/master/assets/image/favicon.jpg)
 - 设置导航栏固定在窗口顶部，不随页面下滑而改变位置
 - 导航栏按钮包括：
   - 左上角笔名、**首页**：自动跳转至本站首页
@@ -119,7 +119,7 @@
 
 依次显示：头像、个签、最近更新、热门圈子、热门标签
 
-- **头像**：图片存储于[favicon.jpg](https://github.com/junesirius/Replika/blob/master/assets/media/favicon.jpg)，显示为圆形。
+- **头像**：图片存储于[favicon.jpg](https://github.com/junesirius/Replika/blob/master/assets/image/favicon.jpg)，显示为圆形。
 - **个签**：文字居中排列，内容存储于[\_data/description.yml](https://github.com/junesirius/Replika/blob/master/_data/description.yml)。
 - **最近更新**：从所有更新的文章中自动选取最新的五篇，按从新到旧顺序显示标题并提供跳转链接。显示文章数量可进行更改。
 - **热门分类**：统计所有`categories`标签，选取文章数量最多的五个分类，按从多到少顺序显示类别名称及对应文章数量，点击链接可跳转至`categories.html`中对应分类的位置。显示的热门分类数量可进行更改。
@@ -129,15 +129,15 @@
 
 #### [theme.scss](https://github.com/junesirius/Replika/tree/master/_sass/theme.scss)
 
-包含大部分自定义的css格式，包括页眉、页脚、侧边栏、文章页的主要格式。设置个站背景纹理图片为[canvas_bg.jpg](https://github.com/junesirius/Replika/blob/master/assets/media/canvas_bg.jpg)。
+包含大部分自定义的css格式，包括页眉、页脚、侧边栏、文章页的主要格式。设置个站背景纹理图片为[canvas_bg.jpg](https://github.com/junesirius/Replika/blob/master/assets/image/canvas_bg.jpg)。
 
 #### [custom\_color.scss](https://github.com/junesirius/Replika/tree/master/_sass/custom_color.scss)
 
 自定义主题色。
 
-- <span style="color: #663333;">main-color（主题色）：用于页眉、页脚、侧边栏的背景色，及文章正文字体颜色，建议使用深色。本站使用色号为：![#663333](https://via.placeholder.com/15/663333/000000?text=+)`#663333`</span>
-- <span style="color: #d2c0b1;">second-color（悬浮色）：当鼠标悬浮在超链接上时显示的颜色，建议使用浅色。本站使用色号为：![#d2c0b1](https://via.placeholder.com/15/d2c0b1/000000?text=+)`#d2c0b1`</span>
-- <span style="color: #330000;">third-color（标题色）：首页及各文章页显示的文章标题颜色，建议选择深色。本站使用色号为：![#330000](https://via.placeholder.com/15/330000/000000?text=+)`#330000`</span>
+- <span style="color: #28323c;">main-color（主题色）：用于页眉、页脚、侧边栏的背景色，及文章正文字体颜色，建议使用深色。本站使用色号为：![#28323c](https://via.placeholder.com/15/28323c/000000?text=+)`#28323c`</span>
+- <span style="color: #9d98fc;">second-color（悬浮色）：当鼠标悬浮在超链接上时显示的颜色，建议使用浅色。本站使用色号为：![#9d98fc](https://via.placeholder.com/15/9d98fc/000000?text=+)`#9d98fc`</span>
+- <span style="color: #36165a;">third-color（标题色）：首页及各文章页显示的文章标题颜色，建议选择深色。本站使用色号为：![#36165a](https://via.placeholder.com/15/36165a/000000?text=+)`#36165a`</span>
 
 #### [syntax.scss](https://github.com/junesirius/Replika/tree/master/_sass/syntax.scss)
 
