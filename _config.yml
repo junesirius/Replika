@@ -1,7 +1,7 @@
 # Jekyll configuration
 
-name: Lumina Diary
-name_en: Lumina Diary
+name: Lumina's Diary
+name_en: Lumina's Diary
 
 # url is currently only used for the RSS feed in feed.xml
 url: https://junesirius.github.io
